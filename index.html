@@ -1510,46 +1510,12 @@
                         <div style="padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;">
                             <div>
                                 <div style="font-size:15px;font-weight:650;letter-spacing:-0.2px;">Tarefas</div>
-                                <div style="font-size:12px;color:var(--text-tertiary);margin-top:2px;">2 pendentes · aguardando aprovação</div>
+                                <div id="tasks-subtitle" style="font-size:12px;color:var(--text-tertiary);margin-top:2px;">Carregando...</div>
                             </div>
                             <button style="font-size:12px;background:var(--accent);color:white;border:none;border-radius:8px;padding:6px 14px;cursor:pointer;font-weight:600;transition:var(--transition);" onmouseenter="this.style.background='var(--accent-hover)'" onmouseleave="this.style.background='var(--accent)'">+ Nova</button>
                         </div>
-                        <div style="padding:8px 14px;">
-
-                            <div style="display:flex;align-items:flex-start;gap:14px;padding:16px 10px;border-radius:12px;transition:background 0.15s;cursor:pointer;" onmouseenter="this.style.background='var(--bg-tertiary)'" onmouseleave="this.style.background='transparent'">
-                                <div style="width:18px;height:18px;border-radius:5px;border:2px solid var(--border-hover);margin-top:3px;flex-shrink:0;cursor:pointer;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='var(--border-hover)'"></div>
-                                <div style="flex:1;">
-                                    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;">
-                                        <span style="font-size:10px;background:var(--warning-dim);color:var(--warning);border:1px solid rgba(245,158,11,0.2);padding:1px 8px;border-radius:5px;font-weight:700;letter-spacing:0.3px;">MÉDIA</span>
-                                        <span style="font-size:14px;font-weight:550;letter-spacing:-0.1px;">WhatsApp Integration Error 515</span>
-                                    </div>
-                                    <div style="font-size:12.5px;color:var(--text-secondary);line-height:1.65;margin-bottom:9px;">Scout a analisar erro 515 no WhatsApp Business API. Aguardando aprovação para pesquisa.</div>
-                                    <div style="display:flex;align-items:center;gap:14px;">
-                                        <span style="font-size:11px;color:var(--text-tertiary);display:flex;align-items:center;gap:5px;"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;"></span>Scout</span>
-                                        <span style="font-size:11px;color:var(--text-tertiary);">Unidreamity</span>
-                                        <span style="font-size:11px;color:var(--text-tertiary);">Mar 17</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div style="height:1px;background:var(--border);margin:2px 10px;"></div>
-
-                            <div style="display:flex;align-items:flex-start;gap:14px;padding:16px 10px;border-radius:12px;transition:background 0.15s;cursor:pointer;" onmouseenter="this.style.background='var(--bg-tertiary)'" onmouseleave="this.style.background='transparent'">
-                                <div style="width:18px;height:18px;border-radius:5px;border:2px solid var(--border-hover);margin-top:3px;flex-shrink:0;cursor:pointer;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='var(--border-hover)'"></div>
-                                <div style="flex:1;">
-                                    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;">
-                                        <span style="font-size:10px;background:var(--warning-dim);color:var(--warning);border:1px solid rgba(245,158,11,0.2);padding:1px 8px;border-radius:5px;font-weight:700;letter-spacing:0.3px;">MÉDIA</span>
-                                        <span style="font-size:14px;font-weight:550;letter-spacing:-0.1px;">M-Pesa Moçambique Integration</span>
-                                    </div>
-                                    <div style="font-size:12.5px;color:var(--text-secondary);line-height:1.65;margin-bottom:9px;">Pesquisar integração M-Pesa para pagamentos em Moçambique. KDB responsável pela implementação.</div>
-                                    <div style="display:flex;align-items:center;gap:14px;">
-                                        <span style="font-size:11px;color:var(--text-tertiary);display:flex;align-items:center;gap:5px;"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;"></span>KDB</span>
-                                        <span style="font-size:11px;color:var(--text-tertiary);">Unidreamity</span>
-                                        <span style="font-size:11px;color:var(--text-tertiary);">Mar 17</span>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div id="tasks-container" style="padding:8px 14px;">
+                            <div style="padding:20px;text-align:center;color:var(--text-tertiary);">A carregar tarefas...</div>
                         </div>
                     </div>
                 </div>
@@ -2964,6 +2930,106 @@
                 console.log('Using default data (no live feed)');
             }
         })();
+
+        // Render tasks dynamically
+        async function renderTasks() {
+            try {
+                const response = await fetch('data/tasks.json?t=' + Date.now());
+                const tasks = await response.json();
+                
+                const container = document.getElementById('tasks-container');
+                const subtitle = document.getElementById('tasks-subtitle');
+                
+                if (!tasks || tasks.length === 0) {
+                    container.innerHTML = `
+                        <div style="padding:40px 20px;text-align:center;color:var(--text-tertiary);">
+                            <div style="font-size:48px;margin-bottom:16px;">📋</div>
+                            <div style="font-size:15px;font-weight:500;">Nenhuma tarefa ativa</div>
+                            <div style="font-size:12px;margin-top:8px;">Adiciona tarefas em TASKS.md</div>
+                        </div>
+                    `;
+                    subtitle.textContent = '0 tarefas pendentes';
+                    return;
+                }
+                
+                const pendingTasks = tasks.filter(t => t.status !== 'completed');
+                subtitle.textContent = `${pendingTasks.length} tarefa${pendingTasks.length !== 1 ? 's' : ''} pendente${pendingTasks.length !== 1 ? 's' : ''}`;
+                
+                const priorityColors = {
+                    'high': { bg: 'rgba(220,38,38,0.12)', color: '#dc2626', label: 'ALTA' },
+                    'medium': { bg: 'rgba(245,158,11,0.12)', color: '#f59e0b', label: 'MÉDIA' },
+                    'low': { bg: 'rgba(34,197,94,0.12)', color: '#22c55e', label: 'BAIXA' }
+                };
+                
+                const assigneeColors = {
+                    'Fabio': '#dc2626',
+                    'Friday': '#3b82f6',
+                    'Scout': '#22c55e',
+                    'KDB': '#f59e0b',
+                    'Jarvis': '#8b5cf6',
+                    'Vision': '#0ea5e9'
+                };
+                
+                container.innerHTML = tasks.map((task, idx) => {
+                    const p = priorityColors[task.priority] || priorityColors.medium;
+                    const color = assigneeColors[task.assignee] || '#64748b';
+                    const isDone = task.status === 'completed';
+                    
+                    return `
+                        <div style="display:flex;align-items:flex-start;gap:14px;padding:16px 10px;border-radius:12px;transition:background 0.15s;cursor:pointer;${isDone ? 'opacity:0.5;' : ''}" onmouseenter="this.style.background='var(--bg-tertiary)'" onmouseleave="this.style.background='transparent'">
+                            <div style="width:18px;height:18px;border-radius:5px;border:2px solid ${isDone ? '#22c55e' : 'var(--border-hover)'};margin-top:3px;flex-shrink:0;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='${isDone ? '#22c55e' : 'var(--border-hover)'}'">
+                                ${isDone ? '<span style="color:#22c55e;font-size:12px;">✓</span>' : ''}
+                            </div>
+                            <div style="flex:1;">
+                                <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;">
+                                    <span style="font-size:10px;background:${p.bg};color:${p.color};border:1px solid ${p.color}33;padding:1px 8px;border-radius:5px;font-weight:700;letter-spacing:0.3px;">${p.label}</span>
+                                    <span style="font-size:14px;font-weight:550;letter-spacing:-0.1px;${isDone ? 'text-decoration:line-through;' : ''}">${task.title}</span>
+                                </div>
+                                <div style="display:flex;align-items:center;gap:14px;">
+                                    <span style="font-size:11px;color:var(--text-tertiary);display:flex;align-items:center;gap:5px;">
+                                        <span style="width:6px;height:6px;border-radius:50%;background:${color};display:inline-block;"></span>
+                                        ${task.assignee}
+                                    </span>
+                                    ${task.source ? `<span style="font-size:11px;color:var(--text-tertiary);">${task.source}</span>` : ''}
+                                    ${task.dueDate ? `<span style="font-size:11px;color:var(--accent);">📅 ${task.dueDate}</span>` : ''}
+                                </div>
+                            </div>
+                        </div>
+                        ${idx < tasks.length - 1 ? '<div style="height:1px;background:var(--border);margin:2px 10px;"></div>' : ''}
+                    `;
+                }).join('');
+                
+            } catch (e) {
+                console.error('Failed to load tasks:', e);
+                document.getElementById('tasks-container').innerHTML = `
+                    <div style="padding:40px 20px;text-align:center;color:var(--text-tertiary);">
+                        <div style="font-size:15px;">Erro ao carregar tarefas</div>
+                        <div style="font-size:12px;margin-top:8px;">Tenta novamente mais tarde</div>
+                    </div>
+                `;
+            }
+        }
+        
+        // Load tasks on page load and when navigating to tasks page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderTasks();
+            // Also update sidebar count
+            fetch('data/tasks.json?t=' + Date.now())
+                .then(r => r.json())
+                .then(tasks => {
+                    const pending = tasks ? tasks.filter(t => t.status !== 'completed').length : 0;
+                    const badge = document.querySelector('.bnav-item[data-page="tasks"] .bnav-badge');
+                    if (badge) badge.textContent = pending;
+                })
+                .catch(() => {});
+        });
+        
+        // Hook into navigation
+        const originalNavigateTo = window.navigateTo;
+        window.navigateTo = function(page) {
+            originalNavigateTo(page);
+            if (page === 'tasks') renderTasks();
+        };
     </script>
 </body>
 </html>
