@@ -16,18 +16,12 @@ jobs:
     - name: Checkout dashboard repo
       uses: actions/checkout@v4
       
-    - name: Checkout workspace repo (public)
-      uses: actions/checkout@v4
-      with:
-        repository: fabioivandro04-lgtm/friday-backup
-        path: workspace
-        
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
         
-    - name: Generate stats from workspace
+    - name: Generate timestamped stats
       run: node scripts/update-stats.js
       
     - name: Commit and push changes
