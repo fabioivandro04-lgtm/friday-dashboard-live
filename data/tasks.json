@@ -1,23 +1,22 @@
 [
   {
-    "id": "whatsapp-515",
-    "title": "WhatsApp Integration Error 515 - Scout analyzing",
+    "id": "task-40",
+    "title": "Research latest AI agent frameworks",
     "priority": "medium",
-    "status": "pending",
-    "source": "system"
-  },
-  {
-    "id": "mpesa-integration",
-    "title": "M-Pesa Moçambique Integration - KDB responsible",
-    "priority": "medium",
-    "status": "pending",
-    "source": "system"
-  },
-  {
-    "id": "dashboard-live",
-    "title": "Friday Dashboard Live - Real Data Pipeline",
-    "priority": "high",
     "status": "in-progress",
-    "source": "system"
+    "assignee": "25",
+    "dueDate": null,
+    "progress": 25,
+    "source": "TASKS.md"
+  },
+  {
+    "id": "task-46",
+    "title": "Demo ao vivo - pesquisa rápida",
+    "priority": "medium",
+    "status": "in-progress",
+    "assignee": "0",
+    "dueDate": null,
+    "progress": 0,
+    "source": "TASKS.md"
   }
 ]
