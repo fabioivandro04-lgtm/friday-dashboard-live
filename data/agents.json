@@ -4,22 +4,22 @@
     "name": "Friday",
     "status": "working",
     "task": "Mission Control Active",
-    "progress": 93,
+    "progress": 77,
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-19T19:35:09.428Z"
+    "lastSeen": "2026-03-19T19:40:03.094Z"
   },
   {
     "id": "jarvis",
     "name": "Jarvis",
     "status": "training",
     "task": "Elite Training Protocol",
-    "progress": 92,
+    "progress": 87,
     "hex": "#f59e0b",
     "location": "gym",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-19T19:35:09.428Z"
+    "lastSeen": "2026-03-19T19:40:03.094Z"
   },
   {
     "id": "vision",
@@ -41,17 +41,17 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-19T19:35:09.428Z"
+    "lastSeen": "2026-03-19T19:40:03.094Z"
   },
   {
     "id": "kdb",
     "name": "Coder",
     "status": "standby",
     "task": "Backend Architecture",
-    "progress": 14,
+    "progress": 6,
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-19T19:35:09.428Z"
+    "lastSeen": "2026-03-19T19:40:03.094Z"
   }
 ]
