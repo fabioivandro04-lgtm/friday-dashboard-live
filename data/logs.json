@@ -2,14 +2,49 @@
   {
     "time": "20:13",
     "level": "INFO",
-    "message": "Dashboard updated with REAL data - 0 tasks, 3 cron jobs",
+    "message": "Dashboard updated with REAL data - 0 tasks, 8 cron jobs",
     "agent": "Friday",
     "date": "2026-03-19"
   },
   {
     "time": "20:13",
     "level": "CRON",
-    "message": "Job \"Friday Elite Training Protocol\" scheduled - Next: 21:13:01",
+    "message": "Job \"Friday Elite Training Protocol\" scheduled - Next: 03:00:00",
+    "agent": "System",
+    "date": "2026-03-19"
+  },
+  {
+    "time": "20:13",
+    "level": "CRON",
+    "message": "Job \"Jarvis Elite Training - Business Excellence\" scheduled - Next: 03:35:00",
+    "agent": "System",
+    "date": "2026-03-19"
+  },
+  {
+    "time": "20:13",
+    "level": "CRON",
+    "message": "Job \"Vision Elite Training - Academic Excellence\" scheduled - Next: 03:50:00",
+    "agent": "System",
+    "date": "2026-03-19"
+  },
+  {
+    "time": "20:13",
+    "level": "CRON",
+    "message": "Job \"Scout Elite Training - Research Excellence\" scheduled - Next: 04:05:00",
+    "agent": "System",
+    "date": "2026-03-19"
+  },
+  {
+    "time": "20:13",
+    "level": "CRON",
+    "message": "Job \"Coder Elite Training - Technical Excellence\" scheduled - Next: 04:20:00",
+    "agent": "System",
+    "date": "2026-03-19"
+  },
+  {
+    "time": "20:13",
+    "level": "CRON",
+    "message": "Job \"Agent Academy - Daily Monitor & Alert\" scheduled - Next: 04:40:00",
     "agent": "System",
     "date": "2026-03-19"
   },
@@ -23,7 +58,7 @@
   {
     "time": "20:13",
     "level": "CRON",
-    "message": "Job \"Friday Auto Backup\" scheduled - Next: 00:00:00",
+    "message": "Job \"Friday Auto Backup\" scheduled - Next: 00:20:00",
     "agent": "System",
     "date": "2026-03-19"
   },
