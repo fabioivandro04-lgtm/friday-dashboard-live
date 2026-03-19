@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "training-protocol",
+    "name": "Friday Elite Training Protocol",
+    "schedule": {
+      "expr": "0 3 * * *",
+      "tz": "Europe/Lisbon"
+    },
+    "enabled": true,
+    "nextRun": "2026-03-19T13:13:01.485Z"
+  },
+  {
+    "id": "dashboard-update",
+    "name": "Friday Dashboard Real Data Update",
+    "schedule": {
+      "expr": "*/5 * * * *",
+      "tz": "UTC"
+    },
+    "enabled": true,
+    "nextRun": "2026-03-19T12:20:00.000Z"
+  },
+  {
+    "id": "auto-backup",
+    "name": "Friday Auto Backup",
+    "schedule": {
+      "expr": "0 */6 * * *",
+      "tz": "UTC"
+    },
+    "enabled": true,
+    "nextRun": "2026-03-19T16:00:00.000Z"
+  }
+]
