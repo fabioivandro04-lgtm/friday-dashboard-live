@@ -1,26 +1,42 @@
 {
-  "timestamp": "2026-03-19T19:51:35.220Z",
+  "timestamp": "2026-03-19T19:55:10.349Z",
+  "workspace": {
+    "path": "/root/.openclaw/workspace",
+    "diskUsage": "1.7M",
+    "lastBackup": "2026-03-20 01:49:40 +0800"
+  },
+  "git": {
+    "lastCommit": "Backup automático - 2026-03-20 01:49:40",
+    "lastCommitDate": "2026-03-20 01:49:40 +0800",
+    "totalCommits": 24
+  },
   "memory": {
-    "totalEntries": 1,
+    "totalEntries": 2,
     "today": "2026-03-19"
   },
   "diary": {
-    "totalEntries": 0
+    "totalEntries": 1
   },
   "agents": {
     "total": 5,
-    "working": 1,
-    "standby": 4
+    "working": 2,
+    "standby": 1,
+    "training": 2
   },
   "tasks": {
-    "total": 3,
-    "pending": 2,
-    "inProgress": 1
+    "total": 2,
+    "pending": 0,
+    "inProgress": 2,
+    "completed": 0,
+    "blocked": 0,
+    "byAssignee": {
+      "0": 1,
+      "25": 1
+    }
   },
-  "training": {
-    "sessions": 1,
-    "nextSession": "2026-03-20T03:54:00Z",
-    "status": "scheduled"
+  "cron": {
+    "total": 8,
+    "active": 8
   },
-  "version": "1.0.0-live"
+  "version": "1.0.0-real"
 }
