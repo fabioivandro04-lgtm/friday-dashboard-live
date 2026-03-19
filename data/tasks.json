@@ -1,0 +1,23 @@
+[
+  {
+    "id": "whatsapp-515",
+    "title": "WhatsApp Integration Error 515",
+    "priority": "medium",
+    "status": "pending",
+    "source": "system"
+  },
+  {
+    "id": "mpesa-integration",
+    "title": "M-Pesa Moçambique Integration",
+    "priority": "medium",
+    "status": "pending",
+    "source": "system"
+  },
+  {
+    "id": "dashboard-live",
+    "title": "Friday Dashboard Live - Real Data Pipeline",
+    "priority": "high",
+    "status": "in-progress",
+    "source": "system"
+  }
+]
