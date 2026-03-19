@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-19T12:10:56.834Z",
+  "timestamp": "2026-03-19T12:12:31.090Z",
   "workspace": {
     "path": "/root/.openclaw/workspace",
     "diskUsage": "1.3M",
@@ -31,8 +31,8 @@
     "byAssignee": {}
   },
   "cron": {
-    "total": 3,
-    "active": 3
+    "total": 0,
+    "active": 0
   },
   "version": "1.0.0-real"
 }
