@@ -30,6 +30,13 @@
   {
     "time": "19:55",
     "level": "INFO",
+    "message": "[2fbfcc4] Backup automático - 2026-03-19 19:55:16",
+    "agent": "Git",
+    "date": "2026-03-19"
+  },
+  {
+    "time": "19:55",
+    "level": "DEBUG",
     "message": "[5dddfce] Dashboard update - 2026-03-19 11:20:35",
     "agent": "Git",
     "date": "2026-03-19"
@@ -38,13 +45,6 @@
     "time": "19:55",
     "level": "DEBUG",
     "message": "[aa7fde3] Limpar TASKS.md - sem tarefas (pronto para uso real)",
-    "agent": "Git",
-    "date": "2026-03-19"
-  },
-  {
-    "time": "19:55",
-    "level": "DEBUG",
-    "message": "[00e8be8] Backup automático - 2026-03-19 10:47:58",
     "agent": "Git",
     "date": "2026-03-19"
   }
