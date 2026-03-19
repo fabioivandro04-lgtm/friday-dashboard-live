@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "task-40",
+    "title": "Research latest AI agent frameworks",
+    "priority": "medium",
+    "status": "in-progress",
+    "assignee": "25",
+    "dueDate": null,
+    "progress": 25,
+    "source": "TASKS.md"
+  },
+  {
+    "id": "task-46",
+    "title": "Demo ao vivo - pesquisa rápida",
+    "priority": "medium",
+    "status": "in-progress",
+    "assignee": "0",
+    "dueDate": null,
+    "progress": 0,
+    "source": "TASKS.md"
+  }
+]
