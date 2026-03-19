@@ -1620,27 +1620,12 @@
                             <div style="padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;">
                                 <div>
                                     <div style="font-size:15px;font-weight:650;letter-spacing:-0.2px;">Cron Jobs</div>
-                                    <div style="font-size:12px;color:var(--text-tertiary);margin-top:2px;">1 job activo</div>
+                                    <div id="cron-subtitle" style="font-size:12px;color:var(--text-tertiary);margin-top:2px;">Carregando...</div>
                                 </div>
                                 <button style="font-size:12px;background:transparent;color:var(--text-secondary);border:1px solid var(--border);border-radius:8px;padding:5px 12px;cursor:pointer;font-weight:500;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--border-hover)';this.style.color='var(--text-primary)'" onmouseleave="this.style.borderColor='var(--border)';this.style.color='var(--text-secondary)'">+ Novo</button>
                             </div>
-                            <div style="padding:16px;">
-                                <div style="background:linear-gradient(135deg,rgba(220,38,38,0.07) 0%,var(--bg-tertiary) 100%);border:1px solid rgba(220,38,38,0.15);border-radius:14px;padding:20px 22px;display:flex;align-items:center;gap:18px;">
-                                    <div style="width:50px;height:50px;border-radius:14px;background:var(--accent-dim);border:1px solid rgba(220,38,38,0.2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🏋️</div>
-                                    <div style="flex:1;min-width:0;">
-                                        <div style="font-size:15px;font-weight:650;letter-spacing:-0.2px;margin-bottom:5px;">Self-Improvement Session</div>
-                                        <div style="font-size:12.5px;color:var(--text-secondary);margin-bottom:12px;line-height:1.6;">Sessão diária de treino e auto-melhoria · 45 min · 4 blocos evolutivos</div>
-                                        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-                                            <span style="font-size:11.5px;color:var(--text-tertiary);display:flex;align-items:center;gap:5px;">⏱ <span style="font-family:monospace;color:var(--accent);font-weight:700;font-size:12px;">04:24 WET</span></span>
-                                            <span style="font-size:11.5px;color:var(--text-tertiary);">📍 Gym → Office</span>
-                                            <span style="font-size:11.5px;color:var(--text-tertiary);">🔁 Diário</span>
-                                        </div>
-                                    </div>
-                                    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0;">
-                                        <span style="font-size:10px;background:var(--success-dim);color:var(--success);border:1px solid rgba(34,197,94,0.2);padding:4px 12px;border-radius:20px;font-weight:700;white-space:nowrap;">● ACTIVO</span>
-                                        <span style="font-size:10.5px;color:var(--text-tertiary);font-family:monospace;">next: 04:24</span>
-                                    </div>
-                                </div>
+                            <div id="cron-container" style="padding:16px;">
+                                <div style="padding:20px;text-align:center;color:var(--text-tertiary);">A carregar cron jobs...</div>
                             </div>
                         </div>
 
@@ -1649,25 +1634,8 @@
                             <div style="padding:16px 22px;border-bottom:1px solid var(--border);">
                                 <div style="font-size:13px;font-weight:600;">Histórico de Execuções</div>
                             </div>
-                            <div style="padding:8px 14px 14px;">
-                                <div style="display:flex;align-items:center;gap:12px;padding:12px 10px;border-radius:10px;font-size:12.5px;">
-                                    <span style="width:6px;height:6px;border-radius:50%;background:var(--success);flex-shrink:0;"></span>
-                                    <span style="font-family:monospace;color:var(--text-tertiary);font-size:11px;white-space:nowrap;">2026-03-17 · 04:24</span>
-                                    <span style="color:var(--text-secondary);flex:1;">Self-Improvement Session</span>
-                                    <span style="color:var(--success);font-weight:600;font-size:11px;">OK · 44min</span>
-                                </div>
-                                <div style="display:flex;align-items:center;gap:12px;padding:12px 10px;border-radius:10px;font-size:12.5px;">
-                                    <span style="width:6px;height:6px;border-radius:50%;background:var(--success);flex-shrink:0;"></span>
-                                    <span style="font-family:monospace;color:var(--text-tertiary);font-size:11px;white-space:nowrap;">2026-03-16 · 04:24</span>
-                                    <span style="color:var(--text-secondary);flex:1;">Self-Improvement Session</span>
-                                    <span style="color:var(--success);font-weight:600;font-size:11px;">OK · 46min</span>
-                                </div>
-                                <div style="display:flex;align-items:center;gap:12px;padding:12px 10px;border-radius:10px;font-size:12.5px;">
-                                    <span style="width:6px;height:6px;border-radius:50%;background:var(--success);flex-shrink:0;"></span>
-                                    <span style="font-family:monospace;color:var(--text-tertiary);font-size:11px;white-space:nowrap;">2026-03-15 · 04:24</span>
-                                    <span style="color:var(--text-secondary);flex:1;">Self-Improvement Session</span>
-                                    <span style="color:var(--success);font-weight:600;font-size:11px;">OK · 43min</span>
-                                </div>
+                            <div id="cron-history" style="padding:8px 14px 14px;">
+                                <div style="padding:20px;text-align:center;color:var(--text-tertiary);">Sem histórico disponível</div>
                             </div>
                         </div>
                     </div>
@@ -3010,10 +2978,96 @@
             }
         }
         
-        // Load tasks on page load and when navigating to tasks page
+        // Render cron jobs dynamically
+        async function renderCronJobs() {
+            try {
+                const response = await fetch('data/cron.json?t=' + Date.now());
+                const jobs = await response.json();
+                
+                const container = document.getElementById('cron-container');
+                const subtitle = document.getElementById('cron-subtitle');
+                const historyContainer = document.getElementById('cron-history');
+                
+                if (!jobs || jobs.length === 0) {
+                    container.innerHTML = `
+                        <div style="padding:40px 20px;text-align:center;color:var(--text-tertiary);">
+                            <div style="font-size:48px;margin-bottom:16px;">⏰</div>
+                            <div style="font-size:15px;font-weight:500;">Nenhum cron job configurado</div>
+                            <div style="font-size:12px;margin-top:8px;">Adiciona jobs via <code>openclaw cron add</code></div>
+                        </div>
+                    `;
+                    subtitle.textContent = '0 jobs ativos';
+                    historyContainer.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-tertiary);">Sem histórico disponível</div>';
+                    return;
+                }
+                
+                const activeJobs = jobs.filter(j => j.enabled !== false);
+                subtitle.textContent = `${activeJobs.length} job${activeJobs.length !== 1 ? 's' : ''} ativo${activeJobs.length !== 1 ? 's' : ''}`;
+                
+                // Parse cron schedule to human readable
+                function parseSchedule(schedule) {
+                    if (!schedule) return 'Desconhecido';
+                    if (schedule.kind === 'cron') {
+                        if (schedule.expr === '*/5 * * * *') return 'A cada 5 minutos';
+                        if (schedule.expr === '0 */6 * * *') return 'A cada 6 horas';
+                        if (schedule.expr.includes('54 3')) return '04:24 diário';
+                        return schedule.expr;
+                    }
+                    if (schedule.kind === 'every') {
+                        const hours = Math.floor(schedule.everyMs / 3600000);
+                        return `A cada ${hours} horas`;
+                    }
+                    return schedule.kind || 'Desconhecido';
+                }
+                
+                container.innerHTML = jobs.map(job => {
+                    const isActive = job.enabled !== false;
+                    const scheduleText = parseSchedule(job.schedule);
+                    
+                    return `
+                        <div style="background:linear-gradient(135deg,${isActive ? 'rgba(220,38,38,0.07)' : 'rgba(100,100,100,0.07)'} 0%,var(--bg-tertiary) 100%);border:1px solid ${isActive ? 'rgba(220,38,38,0.15)' : 'var(--border)'};border-radius:14px;padding:20px 22px;display:flex;align-items:center;gap:18px;margin-bottom:12px;">
+                            <div style="width:50px;height:50px;border-radius:14px;background:${isActive ? 'var(--accent-dim)' : 'var(--bg-card)'};border:1px solid ${isActive ? 'rgba(220,38,38,0.2)' : 'var(--border)'};display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">
+                                ${job.name?.includes('Training') ? '🏋️' : job.name?.includes('Backup') ? '💾' : job.name?.includes('Dashboard') ? '📊' : '⏰'}
+                            </div>
+                            <div style="flex:1;min-width:0;">
+                                <div style="font-size:15px;font-weight:650;letter-spacing:-0.2px;margin-bottom:5px;">${job.name || 'Cron Job'}</div>
+                                <div style="font-size:12.5px;color:var(--text-secondary);margin-bottom:12px;line-height:1.6;">${job.id ? job.id.substring(0, 8) : '...'} · ${job.sessionTarget || 'isolated'}</div>
+                                <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+                                    <span style="font-size:11.5px;color:var(--text-tertiary);display:flex;align-items:center;gap:5px;">
+                                        ⏱ <span style="font-family:monospace;color:var(--accent);font-weight:700;font-size:12px;">${scheduleText}</span>
+                                    </span>
+                                    <span style="font-size:11.5px;color:var(--text-tertiary);">${job.payload?.kind || 'system'}</span>
+                                </div>
+                            </div>
+                            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0;">
+                                <span style="font-size:10px;background:${isActive ? 'var(--success-dim)' : 'var(--bg-card)'};color:${isActive ? 'var(--success)' : 'var(--text-tertiary)'};border:1px solid ${isActive ? 'rgba(34,197,94,0.2)' : 'var(--border)'};padding:4px 12px;border-radius:20px;font-weight:700;white-space:nowrap;">
+                                    ${isActive ? '● ACTIVO' : '○ INACTIVO'}
+                                </span>
+                                <span style="font-size:10.5px;color:var(--text-tertiary);font-family:monospace;">${job.id ? job.id.substring(0, 8) : '...'}</span>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+                historyContainer.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-tertiary);">Histórico não disponível via API</div>';
+                
+            } catch (e) {
+                console.error('Failed to load cron jobs:', e);
+                document.getElementById('cron-container').innerHTML = `
+                    <div style="padding:40px 20px;text-align:center;color:var(--text-tertiary);">
+                        <div style="font-size:15px;">Erro ao carregar cron jobs</div>
+                        <div style="font-size:12px;margin-top:8px;">Tenta novamente mais tarde</div>
+                    </div>
+                `;
+            }
+        }
+
+        // Load tasks and cron on page load
         document.addEventListener('DOMContentLoaded', function() {
             renderTasks();
-            // Also update sidebar count
+            renderCronJobs();
+            
+            // Update sidebar counts
             fetch('data/tasks.json?t=' + Date.now())
                 .then(r => r.json())
                 .then(tasks => {
@@ -3029,6 +3083,7 @@
         window.navigateTo = function(page) {
             originalNavigateTo(page);
             if (page === 'tasks') renderTasks();
+            if (page === 'cron') renderCronJobs();
         };
     </script>
 </body>
