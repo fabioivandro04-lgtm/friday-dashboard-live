@@ -16,12 +16,11 @@ jobs:
     - name: Checkout dashboard repo
       uses: actions/checkout@v4
       
-    - name: Checkout workspace repo
+    - name: Checkout workspace repo (public)
       uses: actions/checkout@v4
       with:
         repository: fabioivandro04-lgtm/friday-backup
         path: workspace
-        token: ${{ secrets.WORKSPACE_TOKEN }}
         
     - name: Setup Node.js
       uses: actions/setup-node@v4
