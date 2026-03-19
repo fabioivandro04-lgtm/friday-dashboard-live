@@ -2889,6 +2889,7 @@
                         if (AGENTS[a.id]) {
                             AGENTS[a.id].status = a.status || AGENTS[a.id].status;
                             AGENTS[a.id].task = a.task || AGENTS[a.id].task;
+                            AGENTS[a.id].progress = a.progress !== undefined ? a.progress : AGENTS[a.id].progress;
                         }
                     });
                     console.log('✓ Live agents loaded');
