@@ -1308,7 +1308,8 @@
                 </button>
                 <h1 class="header-title" id="page-title">Overview</h1>
                 <div class="header-meta">
-                    <div class="meta-item">
+                    <div class="meta-item" style="display:flex;align-items:center;gap:12px;">
+                        <span id="refresh-indicator" style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#22c55e;display:flex;align-items:center;gap:4px;"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite;"></span>● LIVE</span>
                         <span class="meta-tz">WET</span>
                         <span class="meta-value" id="last-update">--:--</span>
                     </div>
@@ -2873,32 +2874,51 @@
         }
         })();
 
-        // LIVE DATA INTEGRATION - Non-intrusive fetch
-        (async function loadLiveData() {
+        // LIVE DATA INTEGRATION - Real-time polling every 30s
+        async function loadLiveData() {
             try {
                 const [agents, cron, tasks, logs, metrics] = await Promise.all([
-                    fetch("data/agents.json?v=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null),
+                    fetch("data/agents.json?v=" + Date.now()).then(r =>> r.ok ? r.json() : null).catch(() => null),
                     fetch('data/cron.json').then(r => r.ok ? r.json() : null).catch(() => null),
                     fetch('data/tasks.json').then(r => r.ok ? r.json() : null).catch(() => null),
                     fetch('data/logs.json').then(r => r.ok ? r.json() : null).catch(() => null),
                     fetch('data/metrics.json').then(r => r.ok ? r.json() : null).catch(() => null)
                 ]);
                 
+                let hasUpdates = false;
                 if (agents && Array.isArray(agents)) {
                     agents.forEach(a => {
                         if (AGENTS[a.id]) {
+                            if (AGENTS[a.id].status !== a.status || AGENTS[a.id].task !== a.task) {
+                                hasUpdates = true;
+                            }
                             AGENTS[a.id].status = a.status || AGENTS[a.id].status;
                             AGENTS[a.id].task = a.task || AGENTS[a.id].task;
                             AGENTS[a.id].progress = a.progress !== undefined ? a.progress : AGENTS[a.id].progress;
+                            AGENTS[a.id].lastSeen = a.lastSeen || new Date().toISOString();
                         }
                     });
-                    console.log('✓ Live agents loaded');
+                    if (hasUpdates) {
+                        console.log('✓ Live agents updated:', new Date().toLocaleTimeString());
+                        renderUI();
+                    }
                 }
                 window.liveData = { agents, cron, tasks, logs, metrics };
+                
+                // Update last refresh indicator
+                const refreshIndicator = document.getElementById('refresh-indicator');
+                if (refreshIndicator) {
+                    refreshIndicator.innerHTML = '<span style="width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite;"></span>● LIVE · ' + new Date().toLocaleTimeString('pt-PT', {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+                }
             } catch(e) {
                 console.log('Using default data (no live feed)');
             }
-        })();
+        }
+        
+        // Initial load + polling every 30 seconds
+        loadLiveData();
+        setInterval(loadLiveData, 30000); // 30s polling
+        console.log('📡 Real-time polling active (30s interval)');
 
         // Render tasks dynamically
         async function renderTasks() {
