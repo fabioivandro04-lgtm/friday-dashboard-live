@@ -1,6 +1,15 @@
 [
   {
     "id": "task-40",
+    "title": "Estudar ethical hacking e segurança ofensiva (pentesting, vulnerabilidades web, CTFs)",
+    "priority": "medium",
+    "status": "pending",
+    "dueDate": null,
+    "progress": 0,
+    "source": "TASKS.md"
+  },
+  {
+    "id": "task-42",
     "title": "Research latest AI agent frameworks",
     "priority": "medium",
     "status": "in-progress",
@@ -10,7 +19,7 @@
     "source": "TASKS.md"
   },
   {
-    "id": "task-46",
+    "id": "task-48",
     "title": "Demo ao vivo - pesquisa rápida",
     "priority": "medium",
     "status": "in-progress",
