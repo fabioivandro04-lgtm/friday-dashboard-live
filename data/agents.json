@@ -4,11 +4,11 @@
     "name": "Friday",
     "status": "working",
     "task": "Mission Control Active",
-    "progress": 87,
+    "progress": 80,
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T01:20:05.994Z"
+    "lastSeen": "2026-03-20T01:25:04.863Z"
   },
   {
     "id": "jarvis",
@@ -26,7 +26,7 @@
     "name": "Vision",
     "status": "standby",
     "task": "Academic Monitoring",
-    "progress": 1,
+    "progress": 19,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
@@ -41,17 +41,17 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T01:20:05.994Z"
+    "lastSeen": "2026-03-20T01:25:04.863Z"
   },
   {
     "id": "kdb",
     "name": "Coder",
     "status": "working",
-    "task": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros)",
-    "progress": 1,
+    "task": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros) - ✅ ANÁLISE COMPLETA em `/agents/kdb/learning/telemetry-architecture.md`",
+    "progress": 25,
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T01:20:05.994Z"
+    "lastSeen": "2026-03-20T01:25:04.863Z"
   }
 ]

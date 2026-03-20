@@ -11,12 +11,12 @@
   },
   {
     "id": "task-42",
-    "title": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros)",
+    "title": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros) - ✅ ANÁLISE COMPLETA em `/agents/kdb/learning/telemetry-architecture.md`",
     "priority": "medium",
     "status": "in-progress",
-    "assignee": "1",
+    "assignee": "25",
     "dueDate": null,
-    "progress": 1,
+    "progress": 25,
     "source": "TASKS.md"
   },
   {
