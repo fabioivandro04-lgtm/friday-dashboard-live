@@ -1905,7 +1905,7 @@
         const AGENT_HOME = {
             jarvis:'unidreamity', vision:'study', scout:'research', kdb:'devlab', friday:'mission'
         };
-        const STATUS_COLOR = { idle:'#f59e0b', working:'#22c55e', training:'#dc2626' };
+        const STATUS_COLOR = { idle:'#f59e0b', standby:'#f59e0b', working:'#22c55e', training:'#dc2626' };
 
         // Rooms — Layout C isometric placement
         // Centre: mission_control (Friday)
@@ -2733,7 +2733,7 @@
             const vs=Object.values(AGENTS);
             const s=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
             s('hud-active',vs.filter(a=>a.status==='working').length+' WORKING');
-            s('hud-standby',vs.filter(a=>a.status==='idle').length+' IDLE');
+            s('hud-standby',vs.filter(a=>a.status==='idle'||a.status==='standby').length+' IDLE');
             s('hud-training',vs.filter(a=>a.status==='training').length+' TRAINING');
         }
 
@@ -2859,7 +2859,7 @@
             const vs=Object.values(AGENTS);
             const set=function(id,n,lbl){const e=document.getElementById(id);if(e){const dot=e.querySelector('span');e.textContent='';if(dot)e.appendChild(dot);e.append(' '+n+' '+lbl);}};
             set('ov-stat-working',vs.filter(a=>a.status==='working').length,'WORKING');
-            set('ov-stat-idle',vs.filter(a=>a.status==='idle').length,'IDLE');
+            set('ov-stat-idle',vs.filter(a=>a.status==='idle'||a.status==='standby').length,'IDLE');
             set('ov-stat-training',vs.filter(a=>a.status==='training').length,'TRAINING');
         }
 
