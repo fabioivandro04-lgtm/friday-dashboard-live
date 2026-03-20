@@ -2839,7 +2839,21 @@
         }
         function bootOverview(){
             ovCanvas=document.getElementById('ov-canvas');if(!ovCanvas||ovInited)return;
-            ovInited=true;ovResize();
+            ovInited=true;
+            // Retry resize until we get dimensions
+            let retries=0;
+            const tryResize=()=>{
+                ovResize();
+                const wrap=document.getElementById('ov-canvas-wrap');
+                if(wrap&&(!ovW||!ovH)&&retries<10){
+                    retries++;
+                    console.log('Canvas retry '+retries);
+                    setTimeout(tryResize,100);
+                    return;
+                }
+                console.log('Canvas initialized: '+ovW+'x'+ovH);
+            };
+            tryResize();
             if(typeof ResizeObserver!=='undefined') new ResizeObserver(ovResize).observe(document.getElementById('ov-canvas-wrap'));
             window.addEventListener('resize',ovResize);
             ovCanvas.addEventListener('mousedown',e=>{ovDrag=true;ovLX=e.clientX;});
