@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-20T00:40:06.785Z",
+  "timestamp": "2026-03-20T00:41:24.854Z",
   "workspace": {
     "path": "/root/.openclaw/workspace",
     "diskUsage": "1.9M",
@@ -19,20 +19,21 @@
   },
   "agents": {
     "total": 5,
-    "working": 2,
-    "standby": 3,
+    "working": 3,
+    "standby": 2,
     "training": 0
   },
   "tasks": {
     "total": 4,
-    "pending": 2,
-    "inProgress": 2,
+    "pending": 1,
+    "inProgress": 3,
     "completed": 0,
     "blocked": 0,
     "byAssignee": {
       "0": 1,
+      "5": 1,
       "25": 1,
-      "undefined": 2
+      "undefined": 1
     }
   },
   "cron": {

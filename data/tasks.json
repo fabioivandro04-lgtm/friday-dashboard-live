@@ -3,9 +3,10 @@
     "id": "task-40",
     "title": "Aprender Next.js stack completo (App Router, Server Components, API Routes, Prisma, Tailwind)",
     "priority": "medium",
-    "status": "pending",
+    "status": "in-progress",
+    "assignee": "5",
     "dueDate": null,
-    "progress": 0,
+    "progress": 5,
     "source": "TASKS.md"
   },
   {
