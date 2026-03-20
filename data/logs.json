@@ -1,23 +1,107 @@
 [
   {
-    "time": "22:23",
+    "time": "06:25",
     "level": "INFO",
-    "message": "Dashboard stats updated at 2026-03-20T22:23:22.570Z",
+    "message": "Dashboard updated with REAL data - 4 tasks, 8 cron jobs",
+    "agent": "Friday",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Friday Elite Training Protocol\" scheduled - Next: 03:00:00",
     "agent": "System",
     "date": "2026-03-20"
   },
   {
-    "time": "04:24",
-    "level": "TRAIN",
-    "message": "Elite Training Protocol scheduled",
-    "agent": "Friday",
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Jarvis Elite Training - Business Excellence\" scheduled - Next: 03:35:00",
+    "agent": "System",
     "date": "2026-03-20"
   },
   {
-    "time": "03:54",
-    "level": "TRAIN",
-    "message": "Training completed - Report delivered",
-    "agent": "Friday",
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Vision Elite Training - Academic Excellence\" scheduled - Next: 03:50:00",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Scout Elite Training - Research Excellence\" scheduled - Next: 04:05:00",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Coder Elite Training - Technical Excellence\" scheduled - Next: 04:20:00",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Agent Academy - Daily Monitor & Alert\" scheduled - Next: 04:40:00",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Friday Dashboard Real Data Update\" scheduled - Next: 20:20:00",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "CRON",
+    "message": "Job \"Friday Auto Backup\" scheduled - Next: 00:20:00",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "TASK",
+    "message": "5 has 1 pending tasks",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "TASK",
+    "message": "25 has 2 pending tasks",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "TASK",
+    "message": "0 has 1 pending tasks",
+    "agent": "System",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "INFO",
+    "message": "[638e150] Backup manual: 2026-03-21 03:23:55 — Friday training reports setup, cron config update",
+    "agent": "Git",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "DEBUG",
+    "message": "[126ff33] Backup manual: 2026-03-20 18:48:06 — Dashboard fixes, agent training updates",
+    "agent": "Git",
+    "date": "2026-03-20"
+  },
+  {
+    "time": "06:25",
+    "level": "DEBUG",
+    "message": "[dd40a0c] Manual backup: 2026-03-20 08:16:19",
+    "agent": "Git",
     "date": "2026-03-20"
   }
 ]
