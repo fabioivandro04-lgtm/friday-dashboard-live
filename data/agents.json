@@ -4,18 +4,18 @@
     "name": "Friday",
     "status": "working",
     "task": "Mission Control Active",
-    "progress": 89,
+    "progress": 74,
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T00:45:07.279Z"
+    "lastSeen": "2026-03-20T00:45:51.189Z"
   },
   {
     "id": "jarvis",
     "name": "Jarvis",
     "status": "standby",
     "task": "Unidreamity Strategy",
-    "progress": 16,
+    "progress": 18,
     "hex": "#f59e0b",
     "location": "unidreamity",
     "model": "Kimi 2.5",
@@ -26,7 +26,7 @@
     "name": "Vision",
     "status": "standby",
     "task": "Academic Monitoring",
-    "progress": 11,
+    "progress": 5,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
@@ -41,17 +41,17 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T00:45:07.279Z"
+    "lastSeen": "2026-03-20T00:45:51.189Z"
   },
   {
     "id": "kdb",
     "name": "Coder",
     "status": "working",
-    "task": "Aprender Next.js stack completo (App Router, Server Components, API Routes, Prisma, Tailwind)",
-    "progress": 5,
+    "task": "Estudar criação de dashboards avançados, transmissão de dados em tempo real (WebSockets, SSE, WebRTC) e ferramentas de dataviz (D3.js, Recharts, Grafana)",
+    "progress": 2,
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T00:45:07.279Z"
+    "lastSeen": "2026-03-20T00:45:51.189Z"
   }
 ]

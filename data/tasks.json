@@ -11,11 +11,12 @@
   },
   {
     "id": "task-42",
-    "title": "Estudar ethical hacking e segurança ofensiva (pentesting, vulnerabilidades web, CTFs)",
+    "title": "Estudar criação de dashboards avançados, transmissão de dados em tempo real (WebSockets, SSE, WebRTC) e ferramentas de dataviz (D3.js, Recharts, Grafana)",
     "priority": "medium",
-    "status": "pending",
+    "status": "in-progress",
+    "assignee": "2",
     "dueDate": null,
-    "progress": 0,
+    "progress": 2,
     "source": "TASKS.md"
   },
   {
