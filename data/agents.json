@@ -8,7 +8,7 @@
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T17:00:20.677Z"
+    "lastSeen": "2026-03-20T17:05:07.857Z"
   },
   {
     "id": "jarvis",
@@ -26,7 +26,7 @@
     "name": "Vision",
     "status": "standby",
     "task": "Academic Monitoring",
-    "progress": 3,
+    "progress": 5,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
@@ -41,7 +41,7 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T17:00:20.677Z"
+    "lastSeen": "2026-03-20T17:05:07.857Z"
   },
   {
     "id": "kdb",
@@ -52,6 +52,6 @@
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-20T17:00:20.677Z"
+    "lastSeen": "2026-03-20T17:05:07.857Z"
   }
 ]
