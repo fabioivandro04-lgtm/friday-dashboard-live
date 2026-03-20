@@ -11,12 +11,12 @@
   },
   {
     "id": "task-42",
-    "title": "Estudar criação de dashboards avançados, transmissão de dados em tempo real (WebSockets, SSE, WebRTC) e ferramentas de dataviz (D3.js, Recharts, Grafana)",
+    "title": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros)",
     "priority": "medium",
     "status": "in-progress",
-    "assignee": "2",
+    "assignee": "1",
     "dueDate": null,
-    "progress": 2,
+    "progress": 1,
     "source": "TASKS.md"
   },
   {
