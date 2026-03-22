@@ -1,0 +1,324 @@
+/**
+ * Friday Dashboard - Office 3D Visualization
+ * ISO Canvas 2D, Zero Dependencies
+ * drag=orbit · scroll/pinch=zoom · state-driven agents
+ */
+
+/* ============================================
+   OFFICE 3D STYLES
+   ============================================ */
+
+/* Overview Office */
+.ov-office-wrap {
+    background: #06060f;
+    border: 1px solid #1e1e28;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 130px);
+    min-height: 480px;
+}
+
+.ov-office-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: rgba(6,6,15,0.95);
+    border-bottom: 1px solid #1a1a24;
+    flex-shrink: 0;
+}
+
+.ov-canvas-wrap {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+}
+
+#ov-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Gym/Office Page Layout */
+.office-wrap {
+    display: grid;
+    grid-template-columns: 1fr 268px;
+    gap: 16px;
+    height: calc(100vh - 140px);
+    min-height: 580px;
+}
+
+/* Canvas viewport */
+.office-canvas-wrap {
+    background: #06060f;
+    border: 1px solid #1e1e28;
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    min-height: 400px;
+    height: 100%;
+}
+
+#office-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Overlay UI inside canvas */
+.office-hud {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(6,6,15,0.95) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.office-hud-logo {
+    display: flex; align-items: center; gap: 8px;
+}
+
+.office-hud-badge {
+    width: 26px; height: 26px; border-radius: 6px;
+    background: linear-gradient(135deg, #dc2626, #7f1d1d);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 12px; color: white;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.office-hud-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 700; color: #e2e8f0;
+    letter-spacing: 0.08em;
+}
+
+.office-hud-sub {
+    font-size: 8px; color: #3a3a50; letter-spacing: 0.12em;
+}
+
+.office-hud-pills {
+    display: flex; gap: 12px; pointer-events: auto;
+}
+
+.office-hud-pill {
+    display: flex; align-items: center; gap: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px; color: #4a5568;
+}
+
+.office-hud-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+}
+
+/* Connection status badge */
+.office-conn-badge {
+    position: absolute;
+    bottom: 12px; left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px; color: #4a5568;
+    background: rgba(6,6,15,0.8);
+    padding: 4px 8px; border-radius: 4px;
+    border: 1px solid #1e1e28;
+    z-index: 10; pointer-events: none;
+}
+
+.office-conn-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: #4a5568;
+    transition: background 0.3s;
+}
+
+.office-conn-dot.connected { background: #22c55e; animation: pulse 2s infinite; }
+.office-conn-dot.connecting { background: #f59e0b; animation: pulse 0.8s infinite; }
+
+/* Right panel */
+.office-panel-wrap {
+    display: flex; flex-direction: column; gap: 10px;
+    overflow-y: auto;
+}
+
+.office-panel {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 14px;
+}
+
+.office-panel-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px; font-weight: 700;
+    color: #3a3a50; text-transform: uppercase;
+    letter-spacing: 0.12em; margin-bottom: 10px;
+}
+
+/* Agent rows */
+.agent-row {
+    display: flex; align-items: center; gap: 9px;
+    padding: 7px 8px; border-radius: 6px;
+    cursor: pointer; margin-bottom: 3px;
+    transition: background 0.12s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.agent-row:hover { background: var(--bg-tertiary); }
+.agent-row.selected { background: var(--bg-card); outline: 1px solid rgba(255,255,255,0.08); }
+
+.agent-av {
+    width: 26px; height: 26px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 800; color: white;
+    flex-shrink: 0;
+}
+
+.agent-info { flex: 1; min-width: 0; }
+.agent-name-txt { font-size: 11px; font-weight: 600; }
+.agent-sub { font-size: 9px; color: var(--text-tertiary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.agent-pbar {
+    width: 30px; height: 3px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 2px; overflow: hidden;
+}
+
+.agent-pbar-fill {
+    height: 100%; border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+/* Detail panel */
+.detail-avatar {
+    width: 38px; height: 38px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px; font-weight: 800; color: white;
+}
+
+.detail-badge {
+    font-size: 9px; padding: 2px 7px; border-radius: 4px;
+    display: inline-block; margin-top: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase; letter-spacing: 0.05em;
+}
+
+.move-btn {
+    padding: 4px 9px; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: transparent; color: #94a3b8;
+    font-size: 9px; cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.12s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.move-btn:hover { background: var(--bg-tertiary); color: #e2e8f0; }
+
+/* Log */
+.log-item {
+    display: flex; gap: 7px; align-items: flex-start;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 10px;
+}
+
+.log-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    margin-top: 3px; flex-shrink: 0;
+}
+
+.log-time {
+    color: #3a3a50;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap; font-size: 9px;
+}
+
+.log-txt { color: #94a3b8; line-height: 1.4; }
+.log-agent-name { font-weight: 700; }
+
+/* Location rows */
+.loc-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 10px; background: var(--bg-tertiary);
+    border-radius: 5px; margin-bottom: 5px;
+    border-left: 2px solid transparent;
+}
+
+.loc-room-name { font-size: 11px; font-weight: 500; }
+.loc-agent-list { font-size: 10px; color: var(--text-tertiary); }
+
+/* Schedule */
+.sched-row {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 10px; background: var(--bg-tertiary);
+    border-radius: 5px;
+}
+
+.sched-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 700; color: var(--accent);
+}
+
+.sched-name { font-size: 11px; }
+.sched-sub { font-size: 10px; color: var(--text-tertiary); }
+
+#loc-rest, #loc-gym, #loc-office { display: none; }
+
+/* Agent tooltip */
+#agent-tooltip {
+    display: none;
+    position: absolute;
+    pointer-events: none;
+    background: rgba(6,6,15,0.92);
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #e2e8f0;
+    min-width: 160px;
+    z-index: 20;
+    backdrop-filter: blur(8px);
+}
+
+/* Mobile responsive for office */
+@media (max-width: 768px) {
+    .ov-office-wrap { height: calc(100vh - 160px); min-height: 360px; }
+
+    .office-wrap {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 12px;
+    }
+
+    .office-canvas-wrap {
+        height: 310px;
+        border-radius: var(--radius);
+    }
+
+    .office-panel-wrap {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .office-panel { padding: 11px; }
+    .office-panel-title { font-size: 8px; margin-bottom: 8px; }
+    .agent-row { padding: 6px 7px; }
+    .agent-av { width: 22px; height: 22px; font-size: 9px; border-radius: 5px; }
+    .agent-name-txt { font-size: 10px; }
+    .agent-sub { font-size: 9px; }
+}
