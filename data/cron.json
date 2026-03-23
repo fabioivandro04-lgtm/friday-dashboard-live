@@ -1,98 +1,16 @@
-[
-  {
-    "id": "915ce4f6-b55d-4b34-8c52-4c0bce34049e",
-    "name": "Friday Elite Training Protocol",
-    "schedule": {
-      "expr": "0 3 * * *",
-      "tz": "Europe/Lisbon"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T19:00:00.000Z",
-    "lastRun": null,
-    "lastStatus": "ok"
-  },
-  {
-    "id": "65a3d462-1ac5-4404-9584-11cb5dd2f047",
-    "name": "Jarvis Elite Training - Business Excellence",
-    "schedule": {
-      "expr": "35 3 * * *",
-      "tz": "Europe/Lisbon"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T19:35:00.000Z",
-    "lastRun": null,
-    "lastStatus": "unknown"
-  },
-  {
-    "id": "ffe6c1c9-f8da-4035-9864-b715d51fb6a6",
-    "name": "Vision Elite Training - Academic Excellence",
-    "schedule": {
-      "expr": "50 3 * * *",
-      "tz": "Europe/Lisbon"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T19:50:00.000Z",
-    "lastRun": null,
-    "lastStatus": "unknown"
-  },
-  {
-    "id": "66fd09e2-2b0c-4d07-9949-a006857c641e",
-    "name": "Scout Elite Training - Research Excellence",
-    "schedule": {
-      "expr": "5 4 * * *",
-      "tz": "Europe/Lisbon"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T20:05:00.000Z",
-    "lastRun": null,
-    "lastStatus": "unknown"
-  },
-  {
-    "id": "31156d3a-c996-4145-905b-e19d576f9ce7",
-    "name": "Coder Elite Training - Technical Excellence",
-    "schedule": {
-      "expr": "20 4 * * *",
-      "tz": "Europe/Lisbon"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T20:20:00.000Z",
-    "lastRun": null,
-    "lastStatus": "unknown"
-  },
-  {
-    "id": "84544810-055b-451b-9b62-aed042121566",
-    "name": "Agent Academy - Daily Monitor & Alert",
-    "schedule": {
-      "expr": "40 4 * * *",
-      "tz": "Europe/Lisbon"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T20:40:00.000Z",
-    "lastRun": null,
-    "lastStatus": "unknown"
-  },
-  {
-    "id": "327da8ff-a415-4835-b102-1f49ad130c30",
-    "name": "Friday Dashboard Real Data Update",
-    "schedule": {
-      "expr": "*/5 * * * *",
-      "tz": "UTC"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T12:20:00.000Z",
-    "lastRun": null,
-    "lastStatus": "ok"
-  },
-  {
-    "id": "e495635d-c56d-4dfc-a2ce-5f5375e0976b",
-    "name": "Friday Auto Backup",
-    "schedule": {
-      "expr": "0 */6 * * *",
-      "tz": "UTC"
-    },
-    "enabled": true,
-    "nextRun": "2026-03-19T16:20:00.000Z",
-    "lastRun": null,
-    "lastStatus": "ok"
-  }
-]
+{
+  "active": 1,
+  "total": 1,
+  "jobs": [
+    {
+      "id": "training-protocol",
+      "name": "Friday Elite Training Protocol",
+      "schedule": {
+        "expr": "54 3 * * *",
+        "tz": "Europe/Lisbon"
+      },
+      "enabled": true,
+      "nextRun": "2026-03-20T03:54:00Z"
+    }
+  ]
+}
