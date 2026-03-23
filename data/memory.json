@@ -1,5 +1,11 @@
 [
   {
+    "date": "vision_training_2026-03-23",
+    "title": "Vision Training Log - 2026-03-23",
+    "preview": "# Vision Training Log - 2026-03-23 ## Daily Training Session - Academic Excellence  ---  ## 1. ADVAN...",
+    "type": "memory"
+  },
+  {
     "date": "2026-03-23",
     "title": "2026-03-23 — Jarvis Elite Training",
     "preview": "# 2026-03-23 — Jarvis Elite Training  ## Sessão de Treino Concluída  **Agente:** Jarvis (Business Ag...",
@@ -21,12 +27,6 @@
     "date": "2026-03-20",
     "title": "2026-03-20",
     "preview": "## 2026-03-20  ### Agent Academy - Daily Training Summary  **Friday Elite Training (03:00)** - Statu...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-19",
-    "title": "2026-03-19",
-    "preview": "## 2026-03-19  ### Friday Dashboard Live - Deployed  **Dashboard Mission Control criado e deployado:...",
     "type": "memory"
   }
 ]
