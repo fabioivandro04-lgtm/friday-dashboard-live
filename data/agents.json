@@ -8,7 +8,7 @@
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-23T20:33:15.958Z"
+    "lastSeen": "2026-03-23T20:35:10.863Z"
   },
   {
     "id": "jarvis",
@@ -41,7 +41,7 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-23T20:33:15.958Z"
+    "lastSeen": "2026-03-23T20:35:10.863Z"
   },
   {
     "id": "kdb",
@@ -52,6 +52,6 @@
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-23T20:33:15.958Z"
+    "lastSeen": "2026-03-23T20:35:10.863Z"
   }
 ]
