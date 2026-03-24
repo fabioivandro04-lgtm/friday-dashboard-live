@@ -1,8 +1,32 @@
 [
   {
+    "date": "scout-training-2026-03-24",
+    "title": "SCOUT ELITE TRAINING REPORT",
+    "preview": "# SCOUT ELITE TRAINING REPORT **Date:** Tuesday, March 24, 2026 **Session ID:** 66fd09e2-2b0c-4d07-9...",
+    "type": "memory"
+  },
+  {
     "date": "2026-03-24",
-    "title": "Dashboard Live Active",
-    "preview": "Real-time stats updating every 5 minutes",
-    "type": "system"
+    "title": "Memory Entry - 2026-03-24",
+    "preview": "# Memory Entry - 2026-03-24  ## Auto-Updates - **03:55 UTC** - Friday Dashboard cron job executed su...",
+    "type": "memory"
+  },
+  {
+    "date": "vision_training_2026-03-23",
+    "title": "Vision Training Log - 2026-03-23",
+    "preview": "# Vision Training Log - 2026-03-23 ## Daily Training Session - Academic Excellence  ---  ## 1. ADVAN...",
+    "type": "memory"
+  },
+  {
+    "date": "2026-03-23",
+    "title": "2026-03-23 — Jarvis Elite Training",
+    "preview": "# 2026-03-23 — Jarvis Elite Training  ## Sessão de Treino Concluída  **Agente:** Jarvis (Business Ag...",
+    "type": "memory"
+  },
+  {
+    "date": "training-2026-03-22-coder",
+    "title": "Memory Entry",
+    "preview": "================================================================================ DAILY TRAINING REPO...",
+    "type": "memory"
   }
 ]
