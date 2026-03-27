@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-03-27",
+    "title": "Jarvis Daily Training Log - 2026-03-27",
+    "preview": "# Jarvis Daily Training Log - 2026-03-27  ## Training Session: Business Excellence **Time:** 11:35 A...",
+    "type": "memory"
+  },
+  {
     "date": "coder-training-2026-03-26",
     "title": "Coder Elite Training - Daily Session Log",
     "preview": "# Coder Elite Training - Daily Session Log ## Date: 2026-03-26  ---  ## 1. Design Pattern: Repositor...",
@@ -21,12 +27,6 @@
     "date": "training-jarvis-2026-03-26",
     "title": "RELATÓRIO DE TREINO DIÁRIO - JARVIS",
     "preview": "# RELATÓRIO DE TREINO DIÁRIO - JARVIS **Data:** 26 de Março de 2026 **Agente:** Jarvis (Business Age...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-25-scout-brief",
-    "title": "Scout Daily Intelligence Brief",
-    "preview": "# Scout Daily Intelligence Brief **Date:** March 25, 2026   **For:** Fabio Adam / Unidreamity   **To...",
     "type": "memory"
   }
 ]
