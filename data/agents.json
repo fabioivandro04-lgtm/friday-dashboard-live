@@ -2,56 +2,56 @@
   {
     "id": "friday",
     "name": "Friday",
-    "status": "training",
-    "task": "Elite Training Protocol",
-    "progress": 87,
+    "status": "working",
+    "task": "Mission Control Active",
+    "progress": 100,
     "hex": "#dc2626",
-    "location": "gym",
+    "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-27T19:05:11.738Z"
+    "lastSeen": "2026-03-27T19:08:57.907Z"
   },
   {
     "id": "jarvis",
     "name": "Jarvis",
     "status": "standby",
-    "task": "Unidreamity Strategy",
+    "task": "Awaiting orders",
     "progress": 13,
     "hex": "#f59e0b",
     "location": "unidreamity",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-24T03:41:59.628Z"
+    "lastSeen": "2026-03-27T19:08:57.907Z"
   },
   {
     "id": "vision",
     "name": "Vision",
     "status": "standby",
-    "task": "Academic Monitoring",
-    "progress": 1,
+    "task": "Academic monitoring",
+    "progress": 9,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-21T03:51:31.000Z"
+    "lastSeen": "2026-03-27T19:08:57.907Z"
   },
   {
     "id": "scout",
     "name": "Scout",
-    "status": "working",
-    "task": "Demo ao vivo - pesquisa rápida",
-    "progress": 0,
+    "status": "standby",
+    "task": "Research ready",
+    "progress": 29,
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-27T19:05:11.738Z"
+    "lastSeen": "2026-03-27T19:08:57.907Z"
   },
   {
     "id": "kdb",
     "name": "Coder",
-    "status": "working",
-    "task": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros) - ✅ ANÁLISE COMPLETA em `/agents/kdb/learning/telemetry-architecture.md`",
-    "progress": 25,
+    "status": "standby",
+    "task": "Code review ready",
+    "progress": 17,
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-27T19:05:11.738Z"
+    "lastSeen": "2026-03-27T19:08:57.907Z"
   }
 ]
