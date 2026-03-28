@@ -1,8 +1,32 @@
 [
   {
-    "date": "2026-03-28",
-    "title": "Dashboard Live Active",
-    "preview": "Real-time stats updating every 5 minutes",
-    "type": "system"
+    "date": "academic-kb",
+    "title": "Vision Academic Knowledge Base",
+    "preview": "# Vision Academic Knowledge Base ## Universidade Europeia Academic Agent  ---  Last Updated: March 2...",
+    "type": "memory"
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Jarvis Daily Training Log - 2026-03-27",
+    "preview": "# Jarvis Daily Training Log - 2026-03-27  ## Training Session: Business Excellence **Time:** 11:35 A...",
+    "type": "memory"
+  },
+  {
+    "date": "coder-training-2026-03-26",
+    "title": "Coder Elite Training - Daily Session Log",
+    "preview": "# Coder Elite Training - Daily Session Log ## Date: 2026-03-26  ---  ## 1. Design Pattern: Repositor...",
+    "type": "memory"
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Scout Elite Training - Research Excellence",
+    "preview": "# Scout Elite Training - Research Excellence **Date:** 2026-03-26   **Session Type:** Daily Training...",
+    "type": "memory"
+  },
+  {
+    "date": "vision-training-2026-03-26",
+    "title": "Vision Training Session - 2026-03-26",
+    "preview": "# Vision Training Session - 2026-03-26  ## Foco do Treino: Academic Excellence  ---  ## 1. Técnica d...",
+    "type": "memory"
   }
 ]
