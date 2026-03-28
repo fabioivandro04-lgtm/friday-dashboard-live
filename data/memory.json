@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-03-28",
+    "title": "Registo Diário - 28 de Março de 2026",
+    "preview": "# Registo Diário - 28 de Março de 2026  ## Sessão de Treino Jarvis - Business Excellence  **Hora:** ...",
+    "type": "memory"
+  },
+  {
     "date": "academic-kb",
     "title": "Vision Academic Knowledge Base",
     "preview": "# Vision Academic Knowledge Base ## Universidade Europeia Academic Agent  ---  Last Updated: March 2...",
@@ -21,12 +27,6 @@
     "date": "2026-03-26",
     "title": "Scout Elite Training - Research Excellence",
     "preview": "# Scout Elite Training - Research Excellence **Date:** 2026-03-26   **Session Type:** Daily Training...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-03-26",
-    "title": "Vision Training Session - 2026-03-26",
-    "preview": "# Vision Training Session - 2026-03-26  ## Foco do Treino: Academic Excellence  ---  ## 1. Técnica d...",
     "type": "memory"
   }
 ]
