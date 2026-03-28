@@ -4,54 +4,54 @@
     "name": "Friday",
     "status": "working",
     "task": "Mission Control Active",
-    "progress": 100,
+    "progress": 87,
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-28T13:30:33.425Z"
+    "lastSeen": "2026-03-28T13:31:53.386Z"
   },
   {
     "id": "jarvis",
     "name": "Jarvis",
     "status": "standby",
-    "task": "Awaiting orders",
-    "progress": 11,
+    "task": "Unidreamity Strategy",
+    "progress": 4,
     "hex": "#f59e0b",
     "location": "unidreamity",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-28T13:30:33.425Z"
+    "lastSeen": "2026-03-24T03:41:59.628Z"
   },
   {
     "id": "vision",
     "name": "Vision",
     "status": "standby",
-    "task": "Academic monitoring",
-    "progress": 18,
+    "task": "Academic Monitoring",
+    "progress": 10,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-28T13:30:33.425Z"
+    "lastSeen": "2026-03-21T03:51:31.000Z"
   },
   {
     "id": "scout",
     "name": "Scout",
-    "status": "standby",
-    "task": "Research ready",
-    "progress": 5,
+    "status": "working",
+    "task": "Demo ao vivo - pesquisa rápida",
+    "progress": 0,
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-28T13:30:33.425Z"
+    "lastSeen": "2026-03-28T13:31:53.386Z"
   },
   {
     "id": "kdb",
     "name": "Coder",
-    "status": "standby",
-    "task": "Code review ready",
-    "progress": 22,
+    "status": "working",
+    "task": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros) - ✅ ANÁLISE COMPLETA em `/agents/kdb/learning/telemetry-architecture.md`",
+    "progress": 25,
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-28T13:30:33.425Z"
+    "lastSeen": "2026-03-28T13:31:53.386Z"
   }
 ]
