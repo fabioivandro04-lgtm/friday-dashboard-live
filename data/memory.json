@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-03-28-scout-training",
+    "title": "Scout Elite Training Log - March 28, 2026",
+    "preview": "# Scout Elite Training Log - March 28, 2026  ## Training Session Overview **Date:** March 28, 2026  ...",
+    "type": "memory"
+  },
+  {
     "date": "2026-03-28",
     "title": "Registo Diário - 28 de Março de 2026",
     "preview": "# Registo Diário - 28 de Março de 2026  ## Sessão de Treino Jarvis - Business Excellence  **Hora:** ...",
@@ -21,12 +27,6 @@
     "date": "coder-training-2026-03-26",
     "title": "Coder Elite Training - Daily Session Log",
     "preview": "# Coder Elite Training - Daily Session Log ## Date: 2026-03-26  ---  ## 1. Design Pattern: Repositor...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-26",
-    "title": "Scout Elite Training - Research Excellence",
-    "preview": "# Scout Elite Training - Research Excellence **Date:** 2026-03-26   **Session Type:** Daily Training...",
     "type": "memory"
   }
 ]
