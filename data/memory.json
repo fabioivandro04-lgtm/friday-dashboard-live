@@ -1,32 +1,8 @@
 [
   {
     "date": "2026-03-29",
-    "title": "Jarvis Training Session - 2026-03-29",
-    "preview": "# Jarvis Training Session - 2026-03-29  ## Summary Completed daily business training for Unidreamity...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-28-scout-training",
-    "title": "Scout Elite Training Log - March 28, 2026",
-    "preview": "# Scout Elite Training Log - March 28, 2026  ## Training Session Overview **Date:** March 28, 2026  ...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-28",
-    "title": "Registo Diário - 28 de Março de 2026",
-    "preview": "# Registo Diário - 28 de Março de 2026  ## Sessão de Treino Jarvis - Business Excellence  **Hora:** ...",
-    "type": "memory"
-  },
-  {
-    "date": "academic-kb",
-    "title": "Vision Academic Knowledge Base",
-    "preview": "# Vision Academic Knowledge Base ## Universidade Europeia Academic Agent  ---  Last Updated: March 2...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-27",
-    "title": "Jarvis Daily Training Log - 2026-03-27",
-    "preview": "# Jarvis Daily Training Log - 2026-03-27  ## Training Session: Business Excellence **Time:** 11:35 A...",
-    "type": "memory"
+    "title": "Dashboard Live Active",
+    "preview": "Real-time stats updating every 5 minutes",
+    "type": "system"
   }
 ]
