@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-03-29",
+    "title": "Jarvis Training Session - 2026-03-29",
+    "preview": "# Jarvis Training Session - 2026-03-29  ## Summary Completed daily business training for Unidreamity...",
+    "type": "memory"
+  },
+  {
     "date": "2026-03-28-scout-training",
     "title": "Scout Elite Training Log - March 28, 2026",
     "preview": "# Scout Elite Training Log - March 28, 2026  ## Training Session Overview **Date:** March 28, 2026  ...",
@@ -21,12 +27,6 @@
     "date": "2026-03-27",
     "title": "Jarvis Daily Training Log - 2026-03-27",
     "preview": "# Jarvis Daily Training Log - 2026-03-27  ## Training Session: Business Excellence **Time:** 11:35 A...",
-    "type": "memory"
-  },
-  {
-    "date": "coder-training-2026-03-26",
-    "title": "Coder Elite Training - Daily Session Log",
-    "preview": "# Coder Elite Training - Daily Session Log ## Date: 2026-03-26  ---  ## 1. Design Pattern: Repositor...",
     "type": "memory"
   }
 ]
