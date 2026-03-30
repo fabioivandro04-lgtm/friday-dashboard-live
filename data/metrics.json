@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-30T19:45:08.593Z",
+  "timestamp": "2026-03-30T19:50:05.656Z",
   "workspace": {
     "path": "/root/.openclaw/workspace",
     "diskUsage": "7.2M",
@@ -20,8 +20,8 @@
   "agents": {
     "total": 5,
     "working": 3,
-    "standby": 1,
-    "training": 1
+    "standby": 0,
+    "training": 2
   },
   "tasks": {
     "total": 4,
