@@ -15,7 +15,7 @@
     "name": "Jarvis",
     "status": "standby",
     "task": "Unidreamity Strategy",
-    "progress": 4,
+    "progress": 11,
     "hex": "#f59e0b",
     "location": "unidreamity",
     "model": "Kimi 2.5",
@@ -41,7 +41,7 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-31T21:35:05.709Z"
+    "lastSeen": "2026-03-31T21:40:05.954Z"
   },
   {
     "id": "kdb",
@@ -52,6 +52,6 @@
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-31T21:35:05.709Z"
+    "lastSeen": "2026-03-31T21:40:05.954Z"
   }
 ]
