@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-04-02",
+    "title": "Jarvis Daily Training Report - 2026-04-02",
+    "preview": "# Jarvis Daily Training Report - 2026-04-02  ## Tasks Completed Today  ### 1. Operational Improvemen...",
+    "type": "memory"
+  },
+  {
+    "date": "jarvis-training-2026-04-02",
+    "title": "Jarvis Elite Training - 2026-04-02",
+    "preview": "# Jarvis Elite Training - 2026-04-02  ## Training Summary - Business Excellence Day  ---  ## 1. OPER...",
+    "type": "memory"
+  },
+  {
     "date": "vision-training-2026-04-01",
     "title": "Vision Training Log - 2026-04-01",
     "preview": "# Vision Training Log - 2026-04-01 ## Daily Training Session - Academic Excellence  ---  ## 1. Técni...",
@@ -15,18 +27,6 @@
     "date": "vision-training-2025-03-31",
     "title": "Vision Knowledge Base — Academic Training Log",
     "preview": "# Vision Knowledge Base — Academic Training Log  ## Entry: 2025-03-31  ### Technique Mastered: Feynm...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-31",
-    "title": "2026-03-31 — Memória do Dia",
-    "preview": "# 2026-03-31 — Memória do Dia  ## Lição Aprendida: Quando o Utilizador Tem a Certeza  **Situação:** ...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-03-30",
-    "title": "Vision Elite Training - Academic Excellence",
-    "preview": "# Vision Elite Training - Academic Excellence ## Sessão de Treino Diária | 2026-03-30  ---  ## 1. TÉ...",
     "type": "memory"
   }
 ]
