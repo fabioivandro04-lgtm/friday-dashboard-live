@@ -1,32 +1,8 @@
 [
   {
-    "date": "vision-training-2026-04-01",
-    "title": "Vision Training Log - 2026-04-01",
-    "preview": "# Vision Training Log - 2026-04-01 ## Daily Training Session - Academic Excellence  ---  ## 1. Técni...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-31-coder",
-    "title": "Treino Coder - 31 Março 2026",
-    "preview": "## Treino Coder - 31 Março 2026  Sessão de treino técnico concluída. Foco em padrões de código, segu...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2025-03-31",
-    "title": "Vision Knowledge Base — Academic Training Log",
-    "preview": "# Vision Knowledge Base — Academic Training Log  ## Entry: 2025-03-31  ### Technique Mastered: Feynm...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-03-31",
-    "title": "2026-03-31 — Memória do Dia",
-    "preview": "# 2026-03-31 — Memória do Dia  ## Lição Aprendida: Quando o Utilizador Tem a Certeza  **Situação:** ...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-03-30",
-    "title": "Vision Elite Training - Academic Excellence",
-    "preview": "# Vision Elite Training - Academic Excellence ## Sessão de Treino Diária | 2026-03-30  ---  ## 1. TÉ...",
-    "type": "memory"
+    "date": "2026-04-02",
+    "title": "Dashboard Live Active",
+    "preview": "Real-time stats updating every 5 minutes",
+    "type": "system"
   }
 ]
