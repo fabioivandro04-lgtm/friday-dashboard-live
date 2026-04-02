@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-02-scout-training",
+    "title": "Scout Training Log - April 2, 2026",
+    "preview": "# Scout Training Log - April 2, 2026  ## Session: Research Excellence Training **Focus Areas:** Adva...",
+    "type": "memory"
+  },
+  {
     "date": "2026-04-02",
     "title": "Jarvis Daily Training Report - 2026-04-02",
     "preview": "# Jarvis Daily Training Report - 2026-04-02  ## Tasks Completed Today  ### 1. Operational Improvemen...",
@@ -21,12 +27,6 @@
     "date": "2026-03-31-coder",
     "title": "Treino Coder - 31 Março 2026",
     "preview": "## Treino Coder - 31 Março 2026  Sessão de treino técnico concluída. Foco em padrões de código, segu...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2025-03-31",
-    "title": "Vision Knowledge Base — Academic Training Log",
-    "preview": "# Vision Knowledge Base — Academic Training Log  ## Entry: 2025-03-31  ### Technique Mastered: Feynm...",
     "type": "memory"
   }
 ]
