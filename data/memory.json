@@ -1,5 +1,11 @@
 [
   {
+    "date": "vision-training-2026-04-03",
+    "title": "Vision Elite Training Report - April 3, 2026",
+    "preview": "# Vision Elite Training Report - April 3, 2026 ## Academic Excellence Training Session  **Date:** Ap...",
+    "type": "memory"
+  },
+  {
     "date": "coder-training-2026-04-02",
     "title": "Coder Elite Training - April 2, 2026",
     "preview": "# Coder Elite Training - April 2, 2026  ## Resumo do Treino Diário  **Data:** 2026-04-02   **Focus A...",
@@ -21,12 +27,6 @@
     "date": "jarvis-training-2026-04-02",
     "title": "Jarvis Elite Training - 2026-04-02",
     "preview": "# Jarvis Elite Training - 2026-04-02  ## Training Summary - Business Excellence Day  ---  ## 1. OPER...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-04-01",
-    "title": "Vision Training Log - 2026-04-01",
-    "preview": "# Vision Training Log - 2026-04-01 ## Daily Training Session - Academic Excellence  ---  ## 1. Técni...",
     "type": "memory"
   }
 ]
