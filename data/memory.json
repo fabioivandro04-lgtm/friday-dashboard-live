@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-06",
+    "title": "Friday Activity Log - 2026-04-06",
+    "preview": "# Friday Activity Log - 2026-04-06  ## Scheduled Task Executed  **Cron Job:** Friday Dashboard Real ...",
+    "type": "memory"
+  },
+  {
     "date": "2026-04-06-coder-training",
     "title": "Coder Elite Training - 2026-04-06",
     "preview": "# Coder Elite Training - 2026-04-06  Daily technical training session completed.  ## Training Areas ...",
@@ -9,12 +15,6 @@
     "date": "2026-04-06-scout-training",
     "title": "Scout Elite Training Report",
     "preview": "# Scout Elite Training Report ## Research Excellence Session **Date:** 2026-04-06 **Focus Areas:** R...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-06",
-    "title": "Jarvis Elite Training - Business Excellence",
-    "preview": "# Jarvis Elite Training - Business Excellence ## Daily Training Report | 2026-04-06  ---  ## 1. OPER...",
     "type": "memory"
   },
   {
