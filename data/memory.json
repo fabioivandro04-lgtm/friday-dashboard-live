@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-06-scout-training",
+    "title": "Scout Elite Training Report",
+    "preview": "# Scout Elite Training Report ## Research Excellence Session **Date:** 2026-04-06 **Focus Areas:** R...",
+    "type": "memory"
+  },
+  {
     "date": "2026-04-06",
     "title": "Jarvis Elite Training - Business Excellence",
     "preview": "# Jarvis Elite Training - Business Excellence ## Daily Training Report | 2026-04-06  ---  ## 1. OPER...",
@@ -21,12 +27,6 @@
     "date": "2026-04-04",
     "title": "Jarvis Elite Training Session - Business Excellence",
     "preview": "# Jarvis Elite Training Session - Business Excellence **Date:** 2026-04-04 **Agent:** Jarvis (Busine...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-04-03",
-    "title": "Vision Elite Training Report - April 3, 2026",
-    "preview": "# Vision Elite Training Report - April 3, 2026 ## Academic Excellence Training Session  **Date:** Ap...",
     "type": "memory"
   }
 ]
