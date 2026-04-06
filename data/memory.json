@@ -1,32 +1,8 @@
 [
   {
-    "date": "2026-04-06-scout-training",
-    "title": "Scout Elite Training Report",
-    "preview": "# Scout Elite Training Report ## Research Excellence Session **Date:** 2026-04-06 **Focus Areas:** R...",
-    "type": "memory"
-  },
-  {
     "date": "2026-04-06",
-    "title": "Jarvis Elite Training - Business Excellence",
-    "preview": "# Jarvis Elite Training - Business Excellence ## Daily Training Report | 2026-04-06  ---  ## 1. OPER...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-04-05",
-    "title": "Vision Elite Training Log - April 5, 2026",
-    "preview": "# Vision Elite Training Log - April 5, 2026  ## Today's Advanced Study Technique: INTERLEAVING  ### ...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-04-04",
-    "title": "Vision Elite Training Log - 2026-04-04",
-    "preview": "# Vision Elite Training Log - 2026-04-04  ## Training Session: Academic Excellence Protocol  ### 1. ...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-04",
-    "title": "Jarvis Elite Training Session - Business Excellence",
-    "preview": "# Jarvis Elite Training Session - Business Excellence **Date:** 2026-04-04 **Agent:** Jarvis (Busine...",
-    "type": "memory"
+    "title": "Dashboard Live Active",
+    "preview": "Real-time stats updating every 5 minutes",
+    "type": "system"
   }
 ]
