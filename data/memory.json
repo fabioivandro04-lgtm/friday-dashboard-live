@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-07",
+    "title": "Memory Entry",
+    "preview": "================================================================================                    ...",
+    "type": "memory"
+  },
+  {
     "date": "2026-04-06",
     "title": "Friday Activity Log - 2026-04-06",
     "preview": "# Friday Activity Log - 2026-04-06  ## Scheduled Task Executed  **Cron Job:** Friday Dashboard Real ...",
@@ -21,12 +27,6 @@
     "date": "vision-training-2026-04-05",
     "title": "Vision Elite Training Log - April 5, 2026",
     "preview": "# Vision Elite Training Log - April 5, 2026  ## Today's Advanced Study Technique: INTERLEAVING  ### ...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2026-04-04",
-    "title": "Vision Elite Training Log - 2026-04-04",
-    "preview": "# Vision Elite Training Log - 2026-04-04  ## Training Session: Academic Excellence Protocol  ### 1. ...",
     "type": "memory"
   }
 ]
