@@ -2,31 +2,31 @@
   {
     "id": "friday",
     "name": "Friday",
-    "status": "training",
-    "task": "Elite Training Protocol",
-    "progress": 90,
+    "status": "working",
+    "task": "Mission Control Active",
+    "progress": 81,
     "hex": "#dc2626",
-    "location": "gym",
+    "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-07T19:30:26.944Z"
+    "lastSeen": "2026-03-30T18:29:50.762Z"
   },
   {
     "id": "jarvis",
     "name": "Jarvis",
-    "status": "standby",
-    "task": "Unidreamity Strategy",
-    "progress": 14,
+    "status": "training",
+    "task": "Elite Training Protocol",
+    "progress": 96,
     "hex": "#f59e0b",
-    "location": "unidreamity",
+    "location": "gym",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-24T03:41:59.628Z"
+    "lastSeen": "2026-04-07T19:35:12.054Z"
   },
   {
     "id": "vision",
     "name": "Vision",
     "status": "standby",
     "task": "Academic Monitoring",
-    "progress": 5,
+    "progress": 12,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
@@ -41,7 +41,7 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-07T19:30:26.944Z"
+    "lastSeen": "2026-04-07T19:35:12.054Z"
   },
   {
     "id": "kdb",
@@ -52,6 +52,6 @@
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-07T19:30:26.944Z"
+    "lastSeen": "2026-04-07T19:35:12.054Z"
   }
 ]
