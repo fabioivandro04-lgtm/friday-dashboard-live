@@ -1,32 +1,8 @@
 [
   {
-    "date": "2025-04-09",
-    "title": "Resumo da Execução",
-    "preview": ": # Dashboard Update - 2025-04-09  ## Resumo da Execução - **Data/Hora:** 2025-04-09 03:25 UTC (Thur...",
-    "type": "memory"
-  },
-  {
     "date": "2026-04-08",
-    "title": "Memory Log - 2026-04-08",
-    "preview": "# Memory Log - 2026-04-08  ## Coder Elite Training Session  **Completed at:** 11:20 AM (Asia/Shangha...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-report-2025-04-08",
-    "title": "VISION ELITE TRAINING - RELATÓRIO DE SESSÃO",
-    "preview": "# VISION ELITE TRAINING - RELATÓRIO DE SESSÃO ## Data: 08 de Abril de 2025 | Status: COMPLETO  ---  ...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-training-2025-04-08",
-    "title": "Vision Elite Training - Session Log",
-    "preview": "# Vision Elite Training - Session Log ## Training Date: 2025-04-08 ## Focus: Academic Excellence & S...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "Memory Entry",
-    "preview": "================================================================================                    ...",
-    "type": "memory"
+    "title": "Dashboard Live Active",
+    "preview": "Real-time stats updating every 5 minutes",
+    "type": "system"
   }
 ]
