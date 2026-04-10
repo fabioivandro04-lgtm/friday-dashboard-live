@@ -1,32 +1,8 @@
 [
   {
     "date": "2026-04-10",
-    "title": "Research Audit — April 10, 2026",
-    "preview": "# Research Audit — April 10, 2026  ## Directive Research audit reminder triggered at 06:15 AM Shangh...",
-    "type": "memory"
-  },
-  {
-    "date": "2025-04-10",
-    "title": "AI Daily Brief Project - 2025-04-10",
-    "preview": "## AI Daily Brief Project - 2025-04-10  ### 项目启动 创建「AI每日必读」自动化日报系统，每天早上9点(Lisbon时间)自动抓取AI/科技新闻并推送到飞书...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "7. Evening Memory Maintenance - 23:50 CST",
-    "preview": " ---  ## 7. Evening Memory Maintenance - 23:50 CST  **Performed by:** Fidus (via cron job 46e86c56-1...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-09_scout_training",
-    "title": "Scout Training Log - 2026-04-09",
-    "preview": "# Scout Training Log - 2026-04-09  ## Session Focus: Research Excellence Drills  ---  ## 1. Search T...",
-    "type": "memory"
-  },
-  {
-    "date": "2025-04-09",
-    "title": "Resumo da Execução",
-    "preview": ": # Dashboard Update - 2025-04-09  ## Resumo da Execução - **Data/Hora:** 2025-04-09 03:25 UTC (Thur...",
-    "type": "memory"
+    "title": "Dashboard Live Active",
+    "preview": "Real-time stats updating every 5 minutes",
+    "type": "system"
   }
 ]
