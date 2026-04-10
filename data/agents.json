@@ -2,56 +2,56 @@
   {
     "id": "friday",
     "name": "Friday",
-    "status": "training",
-    "task": "Elite Training Protocol",
-    "progress": 86,
+    "status": "working",
+    "task": "Mission Control Active",
+    "progress": 100,
     "hex": "#dc2626",
-    "location": "gym",
+    "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-10T19:25:03.335Z"
+    "lastSeen": "2026-04-10T19:29:34.133Z"
   },
   {
     "id": "jarvis",
     "name": "Jarvis",
     "status": "standby",
-    "task": "Unidreamity Strategy",
-    "progress": 9,
+    "task": "Awaiting orders",
+    "progress": 24,
     "hex": "#f59e0b",
     "location": "unidreamity",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-03-24T03:41:59.628Z"
+    "lastSeen": "2026-04-10T19:29:34.133Z"
   },
   {
     "id": "vision",
     "name": "Vision",
     "status": "standby",
-    "task": "Academic Monitoring",
-    "progress": 6,
+    "task": "Academic monitoring",
+    "progress": 28,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-02T02:56:28.021Z"
+    "lastSeen": "2026-04-10T19:29:34.133Z"
   },
   {
     "id": "scout",
     "name": "Scout",
-    "status": "working",
-    "task": "Demo ao vivo - pesquisa rápida",
-    "progress": 0,
+    "status": "standby",
+    "task": "Research ready",
+    "progress": 10,
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-10T19:25:03.335Z"
+    "lastSeen": "2026-04-10T19:29:34.133Z"
   },
   {
     "id": "kdb",
     "name": "Coder",
-    "status": "working",
-    "task": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros) - ✅ ANÁLISE COMPLETA em `/agents/kdb/learning/telemetry-architecture.md`",
-    "progress": 25,
+    "status": "standby",
+    "task": "Code review ready",
+    "progress": 0,
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-10T19:25:03.335Z"
+    "lastSeen": "2026-04-10T19:29:34.133Z"
   }
 ]
