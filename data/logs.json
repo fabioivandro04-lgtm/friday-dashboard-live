@@ -86,6 +86,13 @@
   {
     "time": "06:35",
     "level": "INFO",
+    "message": "[11afef3] Backup automático - 2026-04-11 06:35:43",
+    "agent": "Git",
+    "date": "2026-04-10"
+  },
+  {
+    "time": "06:35",
+    "level": "DEBUG",
     "message": "[d865f03] Backup automático - 2026-04-11 00:34:49",
     "agent": "Git",
     "date": "2026-04-10"
@@ -94,13 +101,6 @@
     "time": "06:35",
     "level": "DEBUG",
     "message": "[ccf60ed] Backup automático - 2026-04-10 18:35:03",
-    "agent": "Git",
-    "date": "2026-04-10"
-  },
-  {
-    "time": "06:35",
-    "level": "DEBUG",
-    "message": "[a720382] Backup automático - 2026-04-10 12:34:49",
     "agent": "Git",
     "date": "2026-04-10"
   }
