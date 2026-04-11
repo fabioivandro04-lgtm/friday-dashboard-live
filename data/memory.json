@@ -1,8 +1,32 @@
 [
   {
     "date": "2026-04-11",
-    "title": "Dashboard Live Active",
-    "preview": "Real-time stats updating every 5 minutes",
-    "type": "system"
+    "title": "2026-04-11 - Saturday",
+    "preview": "# 2026-04-11 - Saturday  ## Dashboard Update Runs  - **07:40** - Scheduled dashboard update executed...",
+    "type": "memory"
+  },
+  {
+    "date": "2026-04-10",
+    "title": "2026-04-10 23:40 - Friday Dashboard Real Data Update",
+    "preview": "## 2026-04-10 23:40 - Friday Dashboard Real Data Update  Cron job `327da8ff-a415-4835-b102-1f49ad130...",
+    "type": "memory"
+  },
+  {
+    "date": "vision-knowledge-base",
+    "title": "Vision Knowledge Base - Academic Support Framework",
+    "preview": "# Vision Knowledge Base - Academic Support Framework  ## Quick Reference Guide  ---  ## Study Method...",
+    "type": "memory"
+  },
+  {
+    "date": "vision-training-2026-04-10",
+    "title": "Vision Training Log - April 10, 2026",
+    "preview": "# Vision Training Log - April 10, 2026  ## Daily Training Summary  ---  ## 1. Advanced Study Techniq...",
+    "type": "memory"
+  },
+  {
+    "date": "2025-04-10",
+    "title": "AI Daily Brief Project - 2025-04-10",
+    "preview": "## AI Daily Brief Project - 2025-04-10  ### 项目启动 创建「AI每日必读」自动化日报系统，每天早上9点(Lisbon时间)自动抓取AI/科技新闻并推送到飞书...",
+    "type": "memory"
   }
 ]
