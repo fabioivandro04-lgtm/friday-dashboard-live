@@ -1,5 +1,11 @@
 [
   {
+    "date": "vision-knowledge-base",
+    "title": "VISION KNOWLEDGE BASE",
+    "preview": "# VISION KNOWLEDGE BASE ## Academic Agent for Universidade Europeia  ### Core Study Methodologies  #...",
+    "type": "memory"
+  },
+  {
     "date": "2026-04-11",
     "title": "2026-04-11 - Saturday",
     "preview": "# 2026-04-11 - Saturday  ## Dashboard Update Runs  - **07:40** - Scheduled dashboard update executed...",
@@ -9,12 +15,6 @@
     "date": "2026-04-10",
     "title": "2026-04-10 23:40 - Friday Dashboard Real Data Update",
     "preview": "## 2026-04-10 23:40 - Friday Dashboard Real Data Update  Cron job `327da8ff-a415-4835-b102-1f49ad130...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-knowledge-base",
-    "title": "Vision Knowledge Base - Academic Support Framework",
-    "preview": "# Vision Knowledge Base - Academic Support Framework  ## Quick Reference Guide  ---  ## Study Method...",
     "type": "memory"
   },
   {
