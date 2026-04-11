@@ -1,5 +1,11 @@
 [
   {
+    "date": "scout-training-2026-04-11",
+    "title": "Scout Elite Training Log - 2026-04-11",
+    "preview": "# Scout Elite Training Log - 2026-04-11  ## Training Focus Areas 1. Research Methodologies - Advance...",
+    "type": "memory"
+  },
+  {
     "date": "vision-knowledge-base",
     "title": "VISION KNOWLEDGE BASE",
     "preview": "# VISION KNOWLEDGE BASE ## Academic Agent for Universidade Europeia  ### Core Study Methodologies  #...",
@@ -21,12 +27,6 @@
     "date": "vision-training-2026-04-10",
     "title": "Vision Training Log - April 10, 2026",
     "preview": "# Vision Training Log - April 10, 2026  ## Daily Training Summary  ---  ## 1. Advanced Study Techniq...",
-    "type": "memory"
-  },
-  {
-    "date": "2025-04-10",
-    "title": "AI Daily Brief Project - 2025-04-10",
-    "preview": "## AI Daily Brief Project - 2025-04-10  ### 项目启动 创建「AI每日必读」自动化日报系统，每天早上9点(Lisbon时间)自动抓取AI/科技新闻并推送到飞书...",
     "type": "memory"
   }
 ]
