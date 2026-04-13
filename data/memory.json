@@ -1,8 +1,32 @@
 [
   {
-    "date": "2026-04-13",
-    "title": "Dashboard Live Active",
-    "preview": "Real-time stats updating every 5 minutes",
-    "type": "system"
+    "date": "2026-04-14",
+    "title": "2026-04-14 - Tuesday",
+    "preview": "# 2026-04-14 - Tuesday  ## Morning  ### 07:04 (Shanghai) / 00:04 (Lisbon) Cron-triggered calendar re...",
+    "type": "memory"
+  },
+  {
+    "date": "2026-04-12",
+    "title": "2026-04-12 - Sunday",
+    "preview": "# 2026-04-12 - Sunday  ## Coder Training Session #1  Completed daily training focus areas:  ### 1. D...",
+    "type": "memory"
+  },
+  {
+    "date": "2026-04-11",
+    "title": "2026-04-11 - Saturday",
+    "preview": "# 2026-04-11 - Saturday  ## Dashboard Update Runs  - **07:40** - Scheduled dashboard update executed...",
+    "type": "memory"
+  },
+  {
+    "date": "scout-training-2026-04-11",
+    "title": "Scout Elite Training Log - 2026-04-11",
+    "preview": "# Scout Elite Training Log - 2026-04-11  ## Training Focus Areas 1. Research Methodologies - Advance...",
+    "type": "memory"
+  },
+  {
+    "date": "vision-knowledge-base",
+    "title": "VISION KNOWLEDGE BASE",
+    "preview": "# VISION KNOWLEDGE BASE ## Academic Agent for Universidade Europeia  ### Core Study Methodologies  #...",
+    "type": "memory"
   }
 ]
