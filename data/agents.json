@@ -4,7 +4,7 @@
     "name": "Friday",
     "status": "working",
     "task": "Mission Control Active",
-    "progress": 71,
+    "progress": 83,
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
@@ -41,7 +41,7 @@
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-14T20:54:10.497Z"
+    "lastSeen": "2026-04-14T20:59:06.939Z"
   },
   {
     "id": "kdb",
@@ -52,6 +52,6 @@
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-04-14T20:54:10.497Z"
+    "lastSeen": "2026-04-14T20:59:06.939Z"
   }
 ]
