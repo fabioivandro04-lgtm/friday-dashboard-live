@@ -1,32 +1,8 @@
 [
   {
-    "date": "vision-training-2026-04-15",
-    "title": "Vision Training Log - 15 April 2026",
-    "preview": "# Vision Training Log - 15 April 2026  ## Sessão de Treino Acadêmico Diária **Agente:** Vision (Acad...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-15-scout-training",
-    "title": "Scout Elite Training - Research Excellence",
-    "preview": "# Scout Elite Training - Research Excellence **Date:** 2026-04-15 (Wed)   **Session:** Daily Trainin...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "2026-04-14 - Tuesday",
-    "preview": "# 2026-04-14 - Tuesday  ## Morning  ### 07:04 (Shanghai) / 00:04 (Lisbon) Cron-triggered calendar re...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-12",
-    "title": "2026-04-12 - Sunday",
-    "preview": "# 2026-04-12 - Sunday  ## Coder Training Session #1  Completed daily training focus areas:  ### 1. D...",
-    "type": "memory"
-  },
-  {
-    "date": "2026-04-11",
-    "title": "2026-04-11 - Saturday",
-    "preview": "# 2026-04-11 - Saturday  ## Dashboard Update Runs  - **07:40** - Scheduled dashboard update executed...",
-    "type": "memory"
+    "date": "2026-04-15",
+    "title": "Dashboard Live Active",
+    "preview": "Real-time stats updating every 5 minutes",
+    "type": "system"
   }
 ]
