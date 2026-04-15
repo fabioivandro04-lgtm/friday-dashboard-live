@@ -1,42 +1,23 @@
 [
   {
-    "id": "task-40",
-    "title": "Aprender Next.js stack completo (App Router, Server Components, API Routes, Prisma, Tailwind)",
+    "id": "whatsapp-515",
+    "title": "WhatsApp Integration Error 515 - Scout analyzing",
     "priority": "medium",
-    "status": "in-progress",
-    "assignee": "5",
-    "dueDate": null,
-    "progress": 5,
-    "source": "TASKS.md"
+    "status": "pending",
+    "source": "system"
   },
   {
-    "id": "task-42",
-    "title": "Analisar e projetar arquitetura de telemetria em tempo real para o Friday Dashboard (como capturar estado REAL dos agentes: working/standby/training, sem depender de ficheiros) - ✅ ANÁLISE COMPLETA em `/agents/kdb/learning/telemetry-architecture.md`",
+    "id": "mpesa-integration",
+    "title": "M-Pesa Moçambique Integration - KDB responsible",
     "priority": "medium",
-    "status": "in-progress",
-    "assignee": "25",
-    "dueDate": null,
-    "progress": 25,
-    "source": "TASKS.md"
+    "status": "pending",
+    "source": "system"
   },
   {
-    "id": "task-44",
-    "title": "Research latest AI agent frameworks",
-    "priority": "medium",
+    "id": "dashboard-live",
+    "title": "Friday Dashboard Live - Real Data Pipeline",
+    "priority": "high",
     "status": "in-progress",
-    "assignee": "25",
-    "dueDate": null,
-    "progress": 25,
-    "source": "TASKS.md"
-  },
-  {
-    "id": "task-50",
-    "title": "Demo ao vivo - pesquisa rápida",
-    "priority": "medium",
-    "status": "in-progress",
-    "assignee": "0",
-    "dueDate": null,
-    "progress": 0,
-    "source": "TASKS.md"
+    "source": "system"
   }
 ]
