@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-15-scout-training",
+    "title": "Scout Elite Training - Research Excellence",
+    "preview": "# Scout Elite Training - Research Excellence **Date:** 2026-04-15 (Wed)   **Session:** Daily Trainin...",
+    "type": "memory"
+  },
+  {
     "date": "2026-04-14",
     "title": "2026-04-14 - Tuesday",
     "preview": "# 2026-04-14 - Tuesday  ## Morning  ### 07:04 (Shanghai) / 00:04 (Lisbon) Cron-triggered calendar re...",
@@ -21,12 +27,6 @@
     "date": "scout-training-2026-04-11",
     "title": "Scout Elite Training Log - 2026-04-11",
     "preview": "# Scout Elite Training Log - 2026-04-11  ## Training Focus Areas 1. Research Methodologies - Advance...",
-    "type": "memory"
-  },
-  {
-    "date": "vision-knowledge-base",
-    "title": "VISION KNOWLEDGE BASE",
-    "preview": "# VISION KNOWLEDGE BASE ## Academic Agent for Universidade Europeia  ### Core Study Methodologies  #...",
     "type": "memory"
   }
 ]
