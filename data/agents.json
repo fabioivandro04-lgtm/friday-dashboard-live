@@ -8,7 +8,7 @@
     "hex": "#dc2626",
     "location": "mission",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-07-23T20:01:59.490Z"
+    "lastSeen": "2026-07-23T21:12:23.480Z"
   },
   {
     "id": "jarvis",
@@ -19,39 +19,39 @@
     "hex": "#f59e0b",
     "location": "unidreamity",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-07-23T20:01:59.490Z"
+    "lastSeen": "2026-07-23T21:12:23.480Z"
   },
   {
     "id": "vision",
     "name": "Vision",
     "status": "standby",
     "task": "Academic monitoring",
-    "progress": 15,
+    "progress": 28,
     "hex": "#3b82f6",
     "location": "study",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-07-23T20:01:59.490Z"
+    "lastSeen": "2026-07-23T21:12:23.480Z"
   },
   {
     "id": "scout",
     "name": "Scout",
     "status": "standby",
     "task": "Research ready",
-    "progress": 3,
+    "progress": 2,
     "hex": "#22c55e",
     "location": "research",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-07-23T20:01:59.490Z"
+    "lastSeen": "2026-07-23T21:12:23.480Z"
   },
   {
     "id": "kdb",
     "name": "Coder",
     "status": "standby",
     "task": "Code review ready",
-    "progress": 1,
+    "progress": 8,
     "hex": "#8b5cf6",
     "location": "devlab",
     "model": "Kimi 2.5",
-    "lastSeen": "2026-07-23T20:01:59.490Z"
+    "lastSeen": "2026-07-23T21:12:23.480Z"
   }
 ]
